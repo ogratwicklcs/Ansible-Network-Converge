@@ -25,13 +25,7 @@ This exercise will cover:
 
 #### Step 1
 
-On the control host read the documentation about the `ios_facts` module and the `debug` module.
-
-```bash
-[student1@ansible network-workshop]$ ansible-doc debug
-```
-
-What happens when you use `debug` without specifying any parameter?
+On the control host read the documentation about the `ios_facts` module.
 
 ```bash
 [student1@ansible network-workshop]$ ansible-doc ios_facts
@@ -42,13 +36,7 @@ How can you limit the facts collected ?
 
 #### Step 2:
 
-Ansible Playbooks are [**YAML** files](https://yaml.org/). YAML is a structured encoding format that is also extremely human readable (unlike it's subset - the JSON format)
-
-Using your favorite text editor (`vim` and `nano` are available on the control host) create a new file called `facts.yml`:  
-
-```
-[student1@ansible network-workshop]$ vim facts.yml
-```
+Using your favorite text editor create a new file called `facts.yml`:  
 
 Enter the following play definition into `facts.yml`:
 
@@ -63,7 +51,7 @@ Here is an explanation of each line:
 - The first line, `---` indicates that this is a YAML file.
 - The `- name:` keyword is an optional description for this particular Ansible Playbook.
 - The `hosts:` keyword means this playbook against the group `cisco` defined in the inventory file.
-- The `gather_facts: no` is required since as of Ansible 2.8 and earlier, this only works on Linux hosts, and not network infrastructure.  We will use a specific module to gather facts for network equipment.
+- The `gather_facts: no` is required for Ansible 2.8 and earlier
 
 
 #### Step 3
