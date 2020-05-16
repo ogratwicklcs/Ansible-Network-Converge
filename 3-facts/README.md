@@ -47,7 +47,7 @@ Ansible Playbooks are [**YAML** files](https://yaml.org/). YAML is a structured 
 Using your favorite text editor (`vim` and `nano` are available on the control host) create a new file called `facts.yml`:  
 
 ```
-[student1@ansible networking-workshop]$ vim facts.yml
+[student1@ansible network-workshop]$ vim facts.yml
 ```
 
 Enter the following play definition into `facts.yml`:
@@ -221,5 +221,10 @@ The finished Ansible Playbook is provided here for an answer key: [facts.yml](fa
 # Complete
 
 You have completed lab exercise 3
+
+----
+**Navigation**
+<br>
+[Previous Exercise](../2-first-playbook) - [Next Exercise](../4-jinja)
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)

@@ -93,8 +93,6 @@ snmp-server community ansible-private RW
 
 The `ios_config` module is idempotent. This means, a configuration change is pushed to the device if and only if that configuration does not exist on the end hosts.
 
->Need help with Ansible Automation terminology?  Check out the [glossary here](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html) for more information on terms like idempotency.
-
 To validate the concept of idempotency, re-run the playbook:
 
 ```bash
@@ -113,8 +111,6 @@ rtr1                       : ok=1    changed=0    unreachable=0    failed=0    s
 
 > Note: See that the **changed** parameter in the **PLAY RECAP** indicates 0 changes.
 
-Re-running the Ansible Playbook multiple times will result in the same exact output, with **ok=1** and **change=0**.  Unless another operator or process removes or modifies the existing configuration on rtr1, this Ansible Playbook will just keep reporting **ok=1** indicating that the configuration already exists and is configured correctly on the network device.  
-
 
 #### Step 6
 
@@ -124,11 +120,8 @@ Now update the task to add one more SNMP RO community string named `ansible-test
 snmp-server community ansible-test RO
 ```
 
-Use the text editor of your choice to open the `playbook.yml` file to add the command:
+Use the text editor of your choice to open the `playbook.yml` file.
 
-```bash
-[student1@ansible network-workshop]$ nano playbook.yml
-```
 
 The Ansible Playbook will now look like this:
 
