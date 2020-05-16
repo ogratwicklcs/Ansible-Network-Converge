@@ -16,8 +16,6 @@ Explore and understand the lab environment.  This exercise will cover
 - Locating and understanding the Ansible configuration file (`ansible.cfg`)
 - Locating and understanding an `ini` formatted inventory file
 
-Before you get started, please join us on slack! [Click here to join the ansiblenetwork slack](https://join.slack.com/t/ansiblenetwork/shared_invite/enQtNTU4ODIyNzA1MDkyLThiYmQ3MmNkMWRmOTdjYjMxNzdlNDc4OTk5YTc1ZDBiNDAwOTZlZjE0NDliODJiMjJhMDBkZWM4Nzg2NjkzNDA).  This will allow you to chat with other network automation engineers and get help after the workshops concludes.
-
 # Diagram
 
 ![Red Hat Ansible Automation Lab Diagram](../../../images/network_diagram.png)
@@ -36,13 +34,13 @@ This will not require a username or password.
 
 ## Step 1
 
-Navigate to the `networking-workshop` directory on the Ansible control node.  The word `ansible` indicates the hostname, and that you are on the correct host.
+Navigate to the `network-workshop` directory on the Ansible control node.  The word `ansible` indicates the hostname, and that you are on the correct host.
 
 ```
-[student1@ansible ~]$ cd ~/networking-workshop/
-[student1@ansible networking-workshop]$
-[student1@ansible networking-workshop]$ pwd
-/home/student1/networking-workshop
+[student1@ansible ~]$ cd ~/network-workshop/
+[student1@ansible network-workshop]$
+[student1@ansible network-workshop]$ pwd
+/home/student1/network-workshop
 ```
  - `~` - the tilde in this context is a shortcut for `/home/student1`
  - `cd` - Linux command to change directory
@@ -185,6 +183,11 @@ ansible_connection=network_cli
 # Complete
 
 You have completed lab exercise 1
+
+----
+**Navigation**
+<br>
+Next Exercise](../2-first-playbook)
 
 ---
 [Click Here to return to the Ansible Network Automation Workshop](../README.md)
