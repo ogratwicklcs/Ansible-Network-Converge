@@ -29,7 +29,7 @@ Explore and understand the lab environment.  This exercise will cover
 
 ![Tower Login Window](images/login_window.png)
 - The username will be `admin`
-- password provided by instructor
+- password provided in connection information for the lab
 
 After logging in the Job Dashboard will be the default view as shown below.
 ![Tower Job Dashboard](images/tower_login.png)
@@ -111,10 +111,7 @@ Credentials are utilized by Tower for authentication when launching **Jobs** aga
     - The **CREDENTIAL TYPE** is a **Machine** credential.  
     - The **USERNAME** is set to `ec2-user`.
     - The **PASSWORD** is blank.
-    - The **SSH PRIVATE KEY** is already configured, and is **ENCRYPTED**.
-
-![animation walkthrough ansible credentials](images/credentials.gif)
-Prefer Youtube?  [Click Here](https://youtu.be/UT0t_hlNw-c)
+    - The **SSH PRIVATE KEY** is already configured, and is 
 
 # Takeaways
 

@@ -63,12 +63,6 @@ To run an Ansible Playbook in Ansible Tower we need to create a **Job Template**
 
 5. Scroll down and click the green `save` button.
 
-Here is a walkthrough:
-
-![animation walkthrough ansible tower](images/job_template.gif)
-Prefer Youtube?  [Click Here](https://youtu.be/Vd4jyx7xGuU)
-
-
 ## Step 2: Launch the Job Template
 
 1. Navigate back to the `Templates` window, where all Job Templates are listed.
@@ -166,5 +160,10 @@ You have successfully demonstrated
 # Complete
 
 You have completed lab exercise 6
+
+----
+**Navigation**
+<br>
+[Previous Exercise](../5-explore-tower) - [Next Exercise](../7-tower-survey)
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)

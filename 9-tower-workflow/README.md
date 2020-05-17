@@ -41,7 +41,6 @@ For this exercise we will create a time-stamped backup, if the backup job succes
 
 5. Click on the **Save** button
 
-![workflow creation](images/workflow_create.gif)
 
 ## Step 2: The Workflow Visualizer
 
@@ -118,5 +117,10 @@ You have
 # Complete
 
 You have completed lab exercise 9
+
+----
+**Navigation**
+<br>
+[Previous Exercise](../8-tower-rbac)
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)

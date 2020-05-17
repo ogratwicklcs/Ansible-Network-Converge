@@ -39,11 +39,6 @@ For more in depth details on RBAC terminology please refer to the [documentation
 
 1. Login to Ansible Tower with the **admin** user.
 
-   | Parameter | Value |
-   |---|---|
-   | username  | `admin`  |
-   |  password|  provided by instructor |
-
 2. Confirm that you are logged in as the **admin** user.
 
    ![admin user](images/RBAC_2.png)
@@ -117,7 +112,7 @@ For more in depth details on RBAC terminology please refer to the [documentation
    | Parameter | Value |
    |---|---|
    | username  | network-admin  |
-   |  password|  provided by instructor |
+   |  password|  same password as admin user |
 
 3. Confirm that you are logged in as the **network-admin** user.
 
@@ -130,12 +125,6 @@ For more in depth details on RBAC terminology please refer to the [documentation
    The following two Organizations are not seen anymore:
     - REDHAT COMPUTE ORGANIZATION
     - Default
-
-5. Bonus step: Try this as the network-operator user (same password as network-admin).
-
-   - What is the difference?
-   - As the network operator are you able to view other users?
-   - Are you able to add a new user or edit user credentials?
 
 ## Step 6: Understand Team Roles
 
@@ -166,44 +155,6 @@ For more in depth details on RBAC terminology please refer to the [documentation
    >Note how the same users have different roles for the job template. This highlights the granularity operators can introduce with Ansible Tower in controlling "Who gets access to what". In this example, the network-admin can update (**ADMIN**) the **Network-Commands** job template, whereas the network-operator can only **EXECUTE** it.
 
 
-## Step 8: Login as network-operator
-
-Finally, to see the RBAC in action!
-
-1. Log out at admin and log back in as the **network-operator** user.
-
-   | Parameter | Value |
-   |---|---|
-   | username  | `network-operator`  |
-   |  password|  provided by instructor |
-
-2. Navigate to **Templates** and click on the **Network-Commands** Job Template.
-
-   ![network commands job template](images/RBAC_11.png )
-
-3. Note that, as the *network-operator* user, you will have no ability to change any of the fields.
-
-
-## Step 9: Launching a Job Template
-
-1. Verify you are logged in as the `network-operator` user
-
-2. Click on **Templates** link on the sidebar again
-
-3. This time launch the **Network-Commands** template by clicking on the "rocket" icon:
-
-   ![click the rocket icon](images/RBAC_12.png )
-
-4. You will be prompted by a dialog-box that lets you choose one of the pre-configured show commands.
-
-   ![pre configured survey image](images/RBAC_13.png )
-
-5. Go ahead and choose a command and click ** Next***Launch* to see the playbook being executed and the results being displayed.
-
-## Bonus Step
-
-If time permits, log back in as the network-admin and add another show command you would like the operator to run. This will also help you see how the *Admin* Role of the network-admin user allows you to edit/update the job template.
-
 # Takeaways
 
  - Using Ansible Tower's powerful RBAC feature, you can see it is easy to restrict access to operators to run prescribed commands on production systems without requiring them to have access to the systems themselves.
@@ -215,5 +166,11 @@ If time permits, log back in as the network-admin and add another show command y
 # Complete
 
 You have completed lab exercise 8
+
+----
+**Navigation**
+<br>
+[Previous Exercise](../7-tower-job-template) - [Next Exercise](../9-tower-workflow)
+
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)
