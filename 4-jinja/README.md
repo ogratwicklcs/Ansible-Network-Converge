@@ -39,6 +39,7 @@ Now create a file in this directory name `all.yml` using your text editor of cho
 The interface and IP address information above must be stored as variables so that the Ansible playbook can use it. Start by making a simple YAML dictionary that stores the table listed above. Use a top level variable (e.g. `nodes`) so that a lookup can be performed based on the `inventory_hostname`:
 
 ```yaml
+---
 nodes:
   rtr1:
     Loopback100: "192.168.100.1"
@@ -51,6 +52,12 @@ Copy the YAML dictionary we created above into the group_vars/all.yml file and s
 >All devices are part of the group **all** by default.  If we create a group named **cisco** only network devices belonging to that group would be able to access those variables.
 
 #### Step 2
+
+Create new folder `templates`:
+
+```bash
+[student1@ansible network-workshop]$ mkdir ~/network-workshop/templates
+```
 
 Create a new template file named `template.j2`:
 
@@ -108,11 +115,7 @@ Finally:
 
 #### Step 4
 
-Create the Ansible Playbook config.yml:
-
-```
-[student1@ansible network-workshop]$ nano config.yml
-```
+Create the Ansible Playbook in the `~/network-workshop` directory: `config.yml`
 
 Copy the following Ansible Playbook to the config.yml file:
 
@@ -186,5 +189,11 @@ The provided Ansible Jinja2 template is provided here: [template.j2](template.j2
 # Complete
 
 You have completed lab exercise 4
+
+----
+**Navigation**
+<br>
+[Previous Exercise](../3-facts) - [Next Exercise](../5-explore-tower)
+
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)

@@ -25,13 +25,7 @@ Explore and understand the lab environment.  This exercise will cover
 
 ## Step 1: Login to Ansible Tower
 
-Open up your web browser and type in the Ansible control node's DNS name
-
->For example if the student was assigned the student1 workbench and the workshop name was `durham-workshop` the link would be:
-
-    **https://student1.durham-workshop.rhdemo.io**
-
->This login information has been provided by the instructor at the beginning of class.
+>This login information has been provided in the Lab login instructions under `Ansible Tower access` section at the beginning of class.
 
 ![Tower Login Window](images/login_window.png)
 - The username will be `admin`
@@ -61,7 +55,7 @@ An inventory is required for Red Hat Ansible Tower to be able to run jobs.  An i
 
     ![Inventories Button](images/inventories.png)
 
-2. Under Inventories there will be two inventories, the `Demo Inventory` and the `Workshop Inventory`.  Click on the `Workshop Inventory`.  
+2. Under Inventories there will be one inventory: `Workshop Inventory`.  Click on the `Workshop Inventory`.  
 
     ![Workshop Inventory Link](images/workshop_inventory.png)
 
@@ -77,11 +71,6 @@ An inventory is required for Red Hat Ansible Tower to be able to run jobs.  An i
 
      Take note of the **VARIABLES** field. The `group_vars` are set here including the `ansible_connection` and `ansible_network_os` variable.
 
-Here is a walkthrough:
-
-![animation walkthrough ansible tower](images/inventory.gif)
-Prefer Youtube?  [Click Here](https://youtu.be/4JNbFNSUS9g)
-
 
 ## Step 3: Examine the Ansible Tower Workshop Project
 
@@ -93,7 +82,7 @@ A project is how Ansible Playbooks are imported into Red Hat Ansible Tower.  You
 
     ![projects link](images/projects.png)
 
-2. Under **PROJECTS** there will be two pre-configured projects, `Demo Project` and the `Workshop Project`.  Click on the `Workshop Project`.  
+2. Under **PROJECTS** there will be one pre-configured project: `Workshop Project`.  Click on the `Workshop Project`.  
 
     ![Workshop Project Link](images/workshop_project.png)
 
@@ -103,8 +92,6 @@ A project is how Ansible Playbooks are imported into Red Hat Ansible Tower.  You
 
     Note that Git, Mercurial and Subversion are choices.  Return the choice to Git so that the Project continues to function correctly.
 
-![animation walkthrough ansible tower projects](images/projects.gif)
-Prefer Youtube?  [Click Here](https://youtu.be/xRA97XTxMjA)
 
 ## Step 4: Examine the Ansible Tower Workshop Credential
 
@@ -116,7 +103,7 @@ Credentials are utilized by Tower for authentication when launching **Jobs** aga
 
     ![credentials link](images/credentials.png)
 
-2. Under **CREDENTIALS** there will be three pre-configured credentials, `Demo Credential`, `Tower Credential` and the `Workshop Credentials`.  Click on the `Workshop Credential`.  
+2. Under **CREDENTIALS** there will be two pre-configured credentials, `Tower Credential` and the `Workshop Credentials`.  Click on the `Workshop Credential`.  
 
     ![Workshop Credential Link](images/workshop_credential.png)
 
@@ -143,5 +130,11 @@ Prefer Youtube?  [Click Here](https://youtu.be/UT0t_hlNw-c)
 You have completed lab exercise 5
 
 You have now examined all three components required to get started with Ansible Tower.  A credential, an inventory and a project.  In the next exercise we will create a job template.
+
+----
+**Navigation**
+<br>
+[Previous Exercise](../4-jinja) - [Next Exercise](../6-tower-job-template)
+
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)
