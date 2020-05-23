@@ -23,7 +23,7 @@ Want the Presentation Deck?  Its right here:
 There are additional supplemental exercises that are [located here](supplemental/).
 
 ## Network Diagram
-![Red Hat Ansible Automation](../../images/network_diagram.png)
+![Red Hat Ansible Automation](network_diagram.png)
 
 ## Additional information
  - [Network Automation with Ansible Homepage](https://www.ansible.com/network-automation)
