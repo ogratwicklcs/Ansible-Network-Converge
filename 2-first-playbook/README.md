@@ -60,7 +60,7 @@ snmp-server community ansible-public RO
 snmp-server community ansible-private RW
 ```
 
-#### Step 3
+#### Step 2
 
 Run the playbook using the `ansible-playbook` command:
 
@@ -76,7 +76,7 @@ PLAY RECAP *********************************************************************
 rtr1                       : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
-#### Step 4
+#### Step 3
 
 Verify that the Ansible Playbook worked.  Login to `rtr1` and check the running configuration on the Cisco IOS-XE device.
 
@@ -89,7 +89,7 @@ snmp-server community ansible-private RW
 ```
 
 
-#### Step 5
+#### Step 4
 
 The `ios_config` module is idempotent. This means, a configuration change is pushed to the device if and only if that configuration does not exist on the end hosts.
 
@@ -112,7 +112,7 @@ rtr1                       : ok=1    changed=0    unreachable=0    failed=0    s
 > Note: See that the **changed** parameter in the **PLAY RECAP** indicates 0 changes.
 
 
-#### Step 6
+#### Step 5
 
 Now update the task to add one more SNMP RO community string named `ansible-test`.  
 
@@ -141,7 +141,7 @@ The Ansible Playbook will now look like this:
           - snmp-server community ansible-test RO
 ```
 
-#### Step 7
+#### Step 6
 
 This time however, instead of running the playbook to push the change to the device, execute it using the `--check` flag in combination with the `-v` or verbose mode flag:
 
@@ -168,7 +168,7 @@ rtr1                       : ok=1    changed=1    unreachable=0    failed=0    s
 
 The `--check` mode in combination with the `--verbose` flag will display the exact changes that will be deployed to the end device without actually pushing the change. This is a great technique to validate the changes you are about to push to a device before pushing it.
 
-#### Step 8
+#### Step 7
 
 Verify that the Ansible Playbook did not apply the `ansible-test` community.  Login to `rtr1` and check the running configuration on the Cisco IOS-XE device.
 
@@ -181,7 +181,7 @@ snmp-server community ansible-private RW
 ```
 
 
-#### Step 9
+#### Step 8
 
 Finally re-run this playbook again without the `-v` or `--check` flag to push the changes.
 
@@ -197,7 +197,7 @@ PLAY RECAP *********************************************************************
 rtr1                       : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
-#### Step 10
+#### Step 9
 
 Verify that the Ansible Playbook applied `ansible-test` community.  Login to `rtr1` and check the running configuration on the Cisco IOS-XE device.
 
