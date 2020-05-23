@@ -18,7 +18,7 @@ Explore and understand the lab environment.  This exercise will cover
 
 # Diagram
 
-![Red Hat Ansible Automation Lab Diagram](../../../images/network_diagram.png)
+![Red Hat Ansible Automation Lab Diagram](../network_diagram.png)
 
 There are four routers, named rtr1, rtr2, rtr3 and rtr4.  This diagram is always available on the [network automation workshop table of contents](../README.md).  The SSH configuration file (~/.ssh/config) is already setup so you can easily SSH to any router from the control node.
 
