@@ -154,7 +154,7 @@ Now you can add a user to the Team:
 
 Now click the **PERMISSIONS** button in the **TEAMS** view, you will be greeted with "No Permissions Have Been Granted".
 
-## Granting Permissions
+## Step 6: Granting Permissions
 
 To allow users or teams to actually do something, you have to set permissions. The Team `Execution Team` should only be allowed to modify content of the assigned webservers.
 
@@ -174,7 +174,7 @@ Add the permission to use the template:
 
 - Click **SAVE**
 
-## Test Permissions
+## Step 7: Test Permissions
 
 Now log out of Tower’s web UI and in again as the **tuser** user.
 
