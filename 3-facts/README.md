@@ -166,7 +166,7 @@ Write two additional tasks that display the routers' OS version and serial numbe
 <!-- {% endraw %} -->
 
 
-#### Step 8
+#### Step 7
 
 Now re-run the playbook but this time do not use the `verbose` flag:
 
