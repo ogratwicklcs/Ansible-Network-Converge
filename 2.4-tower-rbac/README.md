@@ -108,7 +108,7 @@ Let’s create a user:
   </tr>
   <tr>
     <td>Organization</td>
-    <td>RED HAT NETWORK ORGANIZATIO</td>
+    <td>RED HAT NETWORK ORGANIZATION</td>
   </tr>         
   <tr>
     <td>EMAIL</td>
