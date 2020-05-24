@@ -179,8 +179,6 @@ Let the job run to completion.  Let the instructor know if anything fails.
 
    The banner will appear on login.  Here is an example from the **ANSIBLE** shown above.
 
-   ![terminal output screen](images/terminal_output.png)
-
 2. Verify on additional routers
 
 # Takeaways
