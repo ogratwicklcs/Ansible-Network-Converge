@@ -170,7 +170,7 @@ You have completed lab exercise 8
 ----
 **Navigation**
 <br>
-[Previous Exercise](../7-tower-job-template) - [Next Exercise](../9-tower-workflow)
+[Previous Exercise](../2.3-tower-job-template) - [Next Exercise](../2.5-tower-workflow)
 
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)

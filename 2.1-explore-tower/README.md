@@ -131,7 +131,7 @@ You have now examined all three components required to get started with Ansible 
 ----
 **Navigation**
 <br>
-[Previous Exercise](../4-jinja) - [Next Exercise](../6-tower-job-template)
+[Previous Exercise](../1.4-jinja) - [Next Exercise](../2.2-tower-job-template)
 
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)

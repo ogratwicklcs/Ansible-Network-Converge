@@ -121,6 +121,6 @@ You have completed lab exercise 9
 ----
 **Navigation**
 <br>
-[Previous Exercise](../8-tower-rbac)
+[Previous Exercise](../2.4-tower-rbac)
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)

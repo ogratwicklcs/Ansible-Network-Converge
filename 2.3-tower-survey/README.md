@@ -199,6 +199,6 @@ You have completed lab exercise 7
 ----
 **Navigation**
 <br>
-[Previous Exercise](../6-tower-job-template) - [Next Exercise](../8-tower-rbac)
+[Previous Exercise](../2.2-tower-job-template) - [Next Exercise](../2.4-tower-rbac)
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)

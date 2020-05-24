@@ -230,6 +230,6 @@ You have completed lab exercise 2
 ----
 **Navigation**
 <br>
-[Previous Exercise](../1-explore) - [Next Exercise](../3-facts)
+[Previous Exercise](../1.1-explore) - [Next Exercise](../1.3-facts)
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)

@@ -187,7 +187,7 @@ You have completed lab exercise 1
 ----
 **Navigation**
 <br>
-[Next Exercise](../2-first-playbook)
+[Next Exercise](../1.2-first-playbook)
 
 ---
 [Click Here to return to the Ansible Network Automation Workshop](../README.md)

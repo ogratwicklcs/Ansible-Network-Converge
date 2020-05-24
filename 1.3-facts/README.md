@@ -213,6 +213,6 @@ You have completed lab exercise 3
 ----
 **Navigation**
 <br>
-[Previous Exercise](../2-first-playbook) - [Next Exercise](../4-jinja)
+[Previous Exercise](../1.2-first-playbook) - [Next Exercise](../1.4-jinja)
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)

@@ -164,6 +164,6 @@ You have completed lab exercise 6
 ----
 **Navigation**
 <br>
-[Previous Exercise](../5-explore-tower) - [Next Exercise](../7-tower-survey)
+[Previous Exercise](../2.1-explore-tower) - [Next Exercise](../2.3-tower-survey)
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)

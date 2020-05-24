@@ -193,7 +193,7 @@ You have completed lab exercise 4
 ----
 **Navigation**
 <br>
-[Previous Exercise](../3-facts) - [Next Exercise](../5-explore-tower)
+[Previous Exercise](../1.3-facts) - [Next Exercise](../2.1-explore-tower)
 
 
 [Click here to return to the Ansible Network Automation Workshop](../README.md)
