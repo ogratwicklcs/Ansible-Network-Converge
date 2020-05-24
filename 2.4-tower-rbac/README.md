@@ -180,7 +180,7 @@ Add the permission to use the template:
 
 Now log out of Tower’s web UI and in again as the **tuser** user.
 
-- Go to the **Templates** view, you should notice for wweb only the `Network-Banner` template is listed. He is allowed to view and launch, but not to edit the Template. Just open the template and try to change it.
+- Go to the **Templates** view, you should notice for **tuser** only the `Network-Banner` template is listed. He is allowed to view and launch, but not to edit the Template. Just open the template and try to change it.
 
 - Run the Job Template by clicking the rocket icon. Enter the survey content to your liking and launch the job.
 
