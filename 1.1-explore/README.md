@@ -1,4 +1,4 @@
-# Exercise 1 - Exploring the lab environment
+# Exercise 1.1 - Exploring the lab environment
 
 **Read this in other languages**: ![uk](../../../images/uk.png) [English](README.md),  ![japan](../../../images/japan.png) [日本語](README.ja.md).
 
@@ -182,7 +182,6 @@ ansible_connection=network_cli
 
 # Complete
 
-You have completed lab exercise 1
 
 ----
 **Navigation**

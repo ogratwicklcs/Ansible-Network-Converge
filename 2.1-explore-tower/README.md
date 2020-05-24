@@ -1,4 +1,4 @@
-# Exercise 5: Explore Red Hat Ansible Tower
+# Exercise 2.1: Explore Red Hat Ansible Tower
 
 **Read this in other languages**: ![uk](../../../images/uk.png) [English](README.md),  ![japan](../../../images/japan.png) [日本語](README.ja.md).
 
@@ -123,8 +123,6 @@ Credentials are utilized by Tower for authentication when launching **Jobs** aga
 ---
 
 # Complete
-
-You have completed lab exercise 5
 
 You have now examined all three components required to get started with Ansible Tower.  A credential, an inventory and a project.  In the next exercise we will create a job template.
 

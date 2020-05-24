@@ -1,4 +1,4 @@
-# Exercise 2 - First Ansible Playbook
+# Exercise 1.2 - First Ansible Playbook
 
 **Read this in other languages**: ![uk](../../../images/uk.png) [English](README.md),  ![japan](../../../images/japan.png) [日本語](README.ja.md).
 
@@ -225,7 +225,6 @@ The finished Ansible Playbook is provided here for an answer key: [playbook.yml]
 
 # Complete
 
-You have completed lab exercise 2
 
 ----
 **Navigation**

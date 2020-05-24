@@ -1,4 +1,4 @@
-# Exercise 6: Creating a Tower Job Template
+# Exercise 2.2: Creating a Tower Job Template
 
 **Read this in other languages**: ![uk](../../../images/uk.png) [English](README.md),  ![japan](../../../images/japan.png) [日本語](README.ja.md).
 
@@ -159,7 +159,6 @@ You have successfully demonstrated
 
 # Complete
 
-You have completed lab exercise 6
 
 ----
 **Navigation**

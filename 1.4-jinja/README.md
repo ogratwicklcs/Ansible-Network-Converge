@@ -1,4 +1,4 @@
-# Exercise 4 - Network Configuration with Jinja Templates
+# Exercise 1.4 - Network Configuration with Jinja Templates
 
 **Read this in other languages**: ![uk](../../../images/uk.png) [English](README.md),  ![japan](../../../images/japan.png) [日本語](README.ja.md).
 
@@ -187,8 +187,6 @@ The provided Ansible Jinja2 template is provided here: [template.j2](template.j2
 ---
 
 # Complete
-
-You have completed lab exercise 4
 
 ----
 **Navigation**

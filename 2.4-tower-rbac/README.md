@@ -1,4 +1,4 @@
-# Exercise 8: Understanding RBAC in Ansible Tower
+# Exercise 2.4: Understanding RBAC in Ansible Tower
 
 **Read this in other languages**: ![uk](../../../images/uk.png) [English](README.md),  ![japan](../../../images/japan.png) [日本語](README.ja.md).
 
@@ -165,7 +165,6 @@ For more in depth details on RBAC terminology please refer to the [documentation
 
 # Complete
 
-You have completed lab exercise 8
 
 ----
 **Navigation**

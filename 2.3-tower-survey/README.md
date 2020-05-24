@@ -1,4 +1,4 @@
-# Exercise 7: Creating a Survey
+# Exercise 2.3: Creating a Survey
 
 **Read this in other languages**: ![uk](../../../images/uk.png) [English](README.md),  ![japan](../../../images/japan.png) [日本語](README.ja.md).
 
@@ -194,7 +194,6 @@ You have successfully demonstrated
 
 # Complete
 
-You have completed lab exercise 7
 
 ----
 **Navigation**

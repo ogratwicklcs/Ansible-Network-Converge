@@ -1,4 +1,4 @@
-# Exercise 3: Ansible Facts
+# Exercise 1.3: Ansible Facts
 
 **Read this in other languages**: ![uk](../../../images/uk.png) [English](README.md),  ![japan](../../../images/japan.png) [日本語](README.ja.md).
 
@@ -208,7 +208,6 @@ The finished Ansible Playbook is provided here for an answer key: [facts.yml](fa
 
 # Complete
 
-You have completed lab exercise 3
 
 ----
 **Navigation**

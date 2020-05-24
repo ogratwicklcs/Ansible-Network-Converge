@@ -1,4 +1,4 @@
-# Exercise 9: Creating a Workflow
+# Exercise 2.5: Creating a Workflow
 
 **Read this in other languages**: ![uk](../../../images/uk.png) [English](README.md),  ![japan](../../../images/japan.png) [日本語](README.ja.md).
 
@@ -115,8 +115,6 @@ You have
 ---
 
 # Complete
-
-You have completed lab exercise 9
 
 ----
 **Navigation**
