@@ -87,72 +87,119 @@ For more in depth details on RBAC terminology please refer to the [documentation
 
    ![teams window image](images/RBAC_6.png )
 
-## Step 4: Examine the Netops Team
-
-1. Click on the **Netops** Team and then click on the **USERS** button. Pay attention to 2 particular users:
-   1. network-admin
-   2. network-operator
-
-   ![image showing users](images/RBAC_7.png )
-
-2. Observe the following two points:
-
-   1. The **network-admin** user has administrative privileges for the **RED HAT NETWORK ORGANIZATION** organization.
-   2. The **network-operator** is simply a member of the Netops team. We will log in as each of these users to understand the roles
 
 
-## Step 5: Login as network-admin
+## Step 4: Create Tower User
 
-1. Log out from the admin user by clicking the power symbol button in the top right corner of the Ansible Tower UI:
+There are three types of Tower Users:
 
-   Power Symbol: ![power symbol image](images/logout.png)
+- **Normal User**: Have read and write access limited to the inventory and projects for which that user has been granted the appropriate roles and privileges.
 
-2. Login to the system with the **network-admin** user.
+- **System Auditor**: Auditors implicitly inherit the read-only capability for all objects within the Tower environment.
 
-   | Parameter | Value |
-   |---|---|
-   | username  | network-admin  |
-   |  password|  same password as admin user |
+- **System Administrator**: Has admin, read, and write privileges over the entire Tower installation.
 
-3. Confirm that you are logged in as the **network-admin** user.
+Let’s create a user:
 
-   ![picture of network admin](images/RBAC_1.png)
+- In the Tower menu under **ACCESS** click **Users**
 
-4. Click on the **Organizations** link on the sidebar.
+- Click the green plus button
 
-   You will notice that you only have visibility to the organization you are an admin of, the **REDHAT NETWORK ORGANIZATION**.  
+- Fill in the values for the new user:
 
-   The following two Organizations are not seen anymore:
-    - REDHAT COMPUTE ORGANIZATION
-    - Default
+<table>
+  <tr>
+    <th>Parameter</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>FIRST NAME </td>
+    <td>test</td>
+  </tr>
+  <tr>
+    <td>LAST NAME</td>
+    <td>user</td>
+  </tr>
+  <tr>
+    <td>Organization</td>
+    <td>RED HAT NETWORK ORGANIZATIO</td>
+  </tr>         
+  <tr>
+    <td>EMAIL</td>
+    <td>tuser@example.com</td>
+  </tr>
+  <tr>
+    <td>USERNAME</td>
+    <td>tuser</td>
+  </tr>  
+  <tr>
+    <td>PASSWORD</td>
+    <td>ansible</td>
+  </tr>
+  <tr>
+    <td>CONFIRM PASSWORD</td>
+    <td>ansible</td>
+  </tr>
+  <tr>
+    <td>USER TYPE</td>
+    <td>Normal User</td>
+  </tr>                           
+</table>
 
-## Step 6: Understand Team Roles
+- Click **SAVE**
 
-1. To understand how different roles and therefore RBACs may be applied, log out and log back in as the **admin** user.
+## Step 5: Ansible Tower Teams
 
-2. Navigate to **Inventories** and click on the  **Workshop Inventory**
+Teams provide a means to implement role-based access control schemes and delegate responsibilities across organizations. For instance, permissions may be granted to a whole Team rather than each user on the Team.
 
-3. Click on the **PERMISSIONS** button
+Create a Team:
 
-   ![workshop inventory window](images/RBAC_8.png )
+- In the menu go to **ACCESS → Teams**
 
-4. Examine the permissions assigned to each user
+- Click the green plus button and create a team named `Execution Team`.
 
-   ![permissions window](images/RBAC_9.png )
+- Click **SAVE**
 
-   Note the **TEAM ROLES** assigned for the **network-admin** and **network-operator** users. By assigning the **USE** Role, the **network-operator** user has been granted permission to use this particular inventory.
+Now you can add a user to the Team:
 
-## Step 7: Job Template Permissions
+- Switch to the Users view of the `tuser` Team by clicking the **USERS** button.
 
-1. Click on the **Templates** button in the left menu
+- Click the green plus button, tick the box next to the `tuser` user and click **SAVE**.
 
-2. Click on the **Network-Commands** Job Template
+Now click the **PERMISSIONS** button in the **TEAMS** view, you will be greeted with "No Permissions Have Been Granted".
 
-3. Click on the **PERMISSIONS** button at the top
+## Granting Permissions
 
-   ![permissions window](images/RBAC_10.png )
+To allow users or teams to actually do something, you have to set permissions. The Team `Execution Team` should only be allowed to modify content of the assigned webservers.
 
-   >Note how the same users have different roles for the job template. This highlights the granularity operators can introduce with Ansible Tower in controlling "Who gets access to what". In this example, the network-admin can update (**ADMIN**) the **Network-Commands** job template, whereas the network-operator can only **EXECUTE** it.
+Add the permission to use the template:
+
+- In the Permissions view of the Team `Execution Team` click the green plus button to add permissions.
+
+- A new window opens. You can choose to set permissions for a number of resources.
+
+    - Select the resource type **JOB TEMPLATES**
+
+    - Choose the `Network-Banner` Template by ticking the box next to it.
+
+- The second part of the window opens, here you assign roles to the selected resource.
+
+    - Choose **EXECUTE**
+
+- Click **SAVE**
+
+## Test Permissions
+
+Now log out of Tower’s web UI and in again as the **tuser** user.
+
+- Go to the **Templates** view, you should notice for wweb only the `Network-Banner` template is listed. He is allowed to view and launch, but not to edit the Template. Just open the template and try to change it.
+
+- Run the Job Template by clicking the rocket icon. Enter the survey content to your liking and launch the job.
+
+- In the following **Jobs** view have a good look around, note that there where changes to the host (of course…​).
+
+
+
 
 
 # Takeaways
