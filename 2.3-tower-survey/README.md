@@ -19,27 +19,7 @@ Demonstrate the use of Ansible Tower [survey feature](https://docs.ansible.com/a
 
 # Guide
 
-## Step 1: Create a Job Template
-
-1. Open the web UI and click on the `Templates` link on the left menu.
-
-   ![templates link](images/templates.png)
-
-2. Click on the green `+` button to create a new job template (make sure to select `Job Template` and not `Workflow Template`)
-
-   | Parameter | Value |
-   |---|---|
-   | Name  | Network-Banner |
-   |  Job Type |  Run |
-   |  Inventory |  Workshop Inventory |
-   |  Project |  Workshop Project |
-   |  Playbook |  `network_banner.yml` |
-   |  Credential |  Workshop Credential |
-
-3. Scroll down and click the green `SAVE` button.  
-
-
-## Step 2: Examine the playbook
+## Step 1: Examine the playbook
 
 Here is what the  `network_banner.yml` Ansible Playbook looks like:
 
@@ -93,6 +73,26 @@ Also note that we are passing in 2 variables to the task file.
 1. `network_banner`: This variable is populated using the `net_banner` variable
 
 2. `banner_type`: This variable is populated by a variable named `net_type`
+
+
+## Step 2: Create a Job Template
+
+1. Open the web UI and click on the `Templates` link on the left menu.
+
+   ![templates link](images/templates.png)
+
+2. Click on the green `+` button to create a new job template (make sure to select `Job Template` and not `Workflow Template`)
+
+   | Parameter | Value |
+   |---|---|
+   | Name  | Network-Banner |
+   |  Job Type |  Run |
+   |  Inventory |  Workshop Inventory |
+   |  Project |  Workshop Project |
+   |  Playbook |  `network_banner.yml` |
+   |  Credential |  Workshop Credential |
+
+3. Scroll down and click the green `SAVE` button.  
 
 
 ## Step 3: Create a survey
@@ -178,8 +178,6 @@ Let the job run to completion.  Let the instructor know if anything fails.
    ```
 
    The banner will appear on login.  Here is an example from the **ANSIBLE** shown above.
-
-   ![terminal output screen](images/terminal_output.png)
 
 2. Verify on additional routers
 
