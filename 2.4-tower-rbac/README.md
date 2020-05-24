@@ -144,6 +144,8 @@ Create a Team:
 
 - Click the green plus button and create a team named `Execution Team`.
 
+- Select the RED HAT NETWORK ORGANIZATION` for the team Organization
+
 - Click **SAVE**
 
 Now you can add a user to the Team:
