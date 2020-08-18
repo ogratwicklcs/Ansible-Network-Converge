@@ -129,7 +129,7 @@ Any **Job Template** that has been run or is currently running will show up unde
 2. Use the `cat` command to view the contents of one of the time stamped network devices
 
    ```
-   [student1@ansible ~]$ cat /backup/2019-07-09-18-42/rtr1
+   [student1@ansible ~]$ cat /backup/< time stamp >/rtr1
 
    Current configuration : 5625 bytes
    !
