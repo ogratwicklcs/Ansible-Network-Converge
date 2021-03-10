@@ -25,7 +25,7 @@ This exercise will cover:
 
 #### Step 1
 
-Using your favorite text editor create a new file called `facts.yml`:  
+Using your favorite text editor create a new file called `facts.yml` in the network-workshop directory:  
 
 Enter the following play definition into `facts.yml`:
 
