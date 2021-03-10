@@ -35,7 +35,6 @@ Navigate to the `network-workshop` directory if you are not already there.
 Examine the provided Ansible Playbook named `playbook.yml` in the network-workshop directory using the VSCode editor.  
 
 ```bash
-[student1@ansible network-workshop]$ cat playbook.yml
 ---
 - name: snmp ro/rw string configuration
   hosts: cisco
@@ -50,8 +49,6 @@ Examine the provided Ansible Playbook named `playbook.yml` in the network-worksh
           - snmp-server community ansible-private RW
 ```
 
- - `cat` - Linux command allowing us to view file contents
- - `playbook.yml` - provided Ansible Playbook
 
 We will explore in detail the components of an Ansible Playbook in the next exercise.  It is suffice for now to see that this playbook will run two Cisco IOS-XE commands
 
