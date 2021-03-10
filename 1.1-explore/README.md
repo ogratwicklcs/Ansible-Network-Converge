@@ -26,7 +26,7 @@ There are four routers, named rtr1, rtr2, rtr3 and rtr4.  This diagram is always
 
 ## Step 1
 
-All automation is done from the Ansible control host, a Red Hat Enterprise Linux machine. To make access to the control host and managing files on it easier, there is a online version of VS Code editor installed directly on the control host. This way it can be accessed via a normal web browser. Commands can be executed right from the terminal within the VS Code editor.
+All automation is done from the Ansible control host, a Red Hat Enterprise Linux machine. To make access to the control host and managing files on it easier, there is a online version of VS Code editor installed directly on the control host. This way, it can be accessed via a normal web browser. Commands can be executed right from the terminal within the VS Code editor.
 
 Let's access the Visual Studio Code. Click on the link for VS Code access from the workshop page:
 
