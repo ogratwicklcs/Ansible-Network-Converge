@@ -38,7 +38,7 @@ At this point, you will see a **Welcome** page:
 
 From within this environment, you can create and modify files or open a terminal and execute commands.
 
-## Step 2 - Opening up Bash Terminal
+## Step 2 
 
 So let's open a new terminal in VS Code. In the menu bar, click on **Terminal** > **New Terminal**. 
 
