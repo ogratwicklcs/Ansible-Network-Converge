@@ -85,6 +85,11 @@ snmp-server community ansible-public RO
 snmp-server community ansible-private RW
 ```
 
+Once you have checked the configuration file don't forget to exit out of the ssh session with the router.
+
+```bash
+[student1@ansible network-workshop]$ exit
+```
 
 #### Step 4
 
