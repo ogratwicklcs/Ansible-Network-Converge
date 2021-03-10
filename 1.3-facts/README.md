@@ -25,17 +25,6 @@ This exercise will cover:
 
 #### Step 1
 
-On the control host read the documentation about the `ios_facts` module.
-
-```bash
-[student1@ansible network-workshop]$ ansible-doc ios_facts
-```
-
-How can you limit the facts collected ?
-
-
-#### Step 2:
-
 Using your favorite text editor create a new file called `facts.yml`:  
 
 Enter the following play definition into `facts.yml`:
@@ -54,7 +43,7 @@ Here is an explanation of each line:
 - The `gather_facts: no` is required for Ansible 2.8 and earlier
 
 
-#### Step 3
+#### Step 2
 
 Next, add the first `task`. This task will use the `ios_facts` module to gather facts about each device in the group `cisco`.
 
@@ -72,7 +61,7 @@ Next, add the first `task`. This task will use the `ios_facts` module to gather 
 
 >A play is a list of tasks. Modules are pre-written code that perform the task.
 
-#### Step 4
+#### Step 3
 
 Execute the Ansible Playbook:
 
@@ -95,7 +84,7 @@ rtr1                       : ok=1    changed=0    unreachable=0    failed=0    s
 ```
 
 
-#### Step 5
+#### Step 4
 
 The play ran successfully and executed against the Cisco router(s). But where is the output? Re-run the playbook using the verbose `-v` flag.
 
@@ -138,7 +127,7 @@ rtr1                       : ok=1    changed=0    unreachable=0    failed=0    s
 
 > Note: The output returns key-value pairs that can then be used within the playbook for subsequent tasks. Also note that all variables that start with **ansible_** are automatically available for subsequent tasks within the play.
 
-#### Step 6
+#### Step 5
 
 Running a playbook in verbose mode is a good option to validate the output from a task. To work with the variables within a playbook you can use the `debug` module.
 
@@ -166,7 +155,7 @@ Write two additional tasks that display the routers' OS version and serial numbe
 <!-- {% endraw %} -->
 
 
-#### Step 7
+#### Step 6
 
 Now re-run the playbook but this time do not use the `verbose` flag:
 
