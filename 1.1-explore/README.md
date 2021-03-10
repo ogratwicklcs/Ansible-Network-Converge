@@ -86,7 +86,7 @@ This command gives you information about the version of Ansible, location of the
 
 ## Step 4
 
-In the lab environment provided to you an `.ansible.cfg` file has already been created and filled with the necessary details in the home directory of your `student<X>` user on the control node:
+In the lab environment provided to you an `.ansible.cfg` file has already been created and filled with the necessary details in the home directory of your `student<X>` user on the control node.
 
 The view the file, click on the **File** menu button on the top left-hand corner of your Visual Studio Code. And select **Open File**:
 ![VS Code Open](images/open_file.PNG) 
