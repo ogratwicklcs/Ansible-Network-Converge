@@ -54,7 +54,7 @@ A new terminal will be opened in the lower part of your editor and you will be a
 
 Note that each student is assigned a student number, i.e. X and you should work as that student <X> user on the control node if not explicitly told differently.
 
-Next, proceed to check that Ansible has been installed correctly.
+Next, proceed to the directory from where we will be running most of our automation.
 
 ```bash
     [student1@ansible ~]$ cd ~/network-workshop/
