@@ -32,7 +32,7 @@ Navigate to the `network-workshop` directory if you are not already there.
 /home/student1/network-workshop
 ```
 
-Examine the provided Ansible Playbook named `playbook.yml`.  Feel free to use your text editor of choice to open the file.  The sample below will use the Linux `cat` command.
+Examine the provided Ansible Playbook named `playbook.yml` in the network-workshop directory using the VSCode editor.  
 
 ```bash
 [student1@ansible network-workshop]$ cat playbook.yml
