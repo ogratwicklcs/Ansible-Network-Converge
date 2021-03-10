@@ -66,17 +66,13 @@ Next, proceed to the directory from where we will be running most of our automat
  - `cd` - Linux command to change directory
  - `pwd` - Linux command for print working directory.  This will show the full path to the current working directory.
 
-Additionally we can check the Ansible version running on the server by running the following command. 
+## Step 3
+
+We can also check the Ansible version running on the server by running the following command. 
 
 Run the `ansible` command with the `--version` command to look at what is configured:
 ```
 [student1@ansible ~]$ ansible --version
-ansible 2.9.8
-  config file = /home/student1/.ansible.cfg
-  configured module search path = [u'/home/student1/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/lib/python2.7/site-packages/ansible
-  executable location = /usr/bin/ansible
-  python version = 2.7.5 (default, Jun 11 2019, 12:19:05) [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
 ```
 The result should resemble the following:
 
@@ -88,7 +84,7 @@ The version you see might be different
 
 This command gives you information about the version of Ansible, location of the executable, version of Python, search path for the modules and location of the `ansible configuration file`.
 
-## Step 3
+## Step 4
 
 In the lab environment provided to you an `.ansible.cfg` file has already been created and filled with the necessary details in the home directory of your `student<X>` user on the control node:
 
@@ -99,14 +95,14 @@ From the drop-down menu select `.ansible.cfg` which will display your ansible co
 
 There are multiple configuration flags provided, but make sure to note the last line: where the location of the inventory is provided.
 
-## Step 4
+## Step 5
 
 The scope of a `play` within a `playbook` is limited to the groups of hosts declared within an Ansible **inventory**. Ansible supports multiple [inventory](http://docs.ansible.com/ansible/latest/intro_inventory.html) types. An inventory could be a simple flat file with a collection of hosts defined within it or it could be a dynamic script (potentially querying a CMDB backend) that generates a list of devices to run the playbook against.
 
 In this lab you will work with a file based inventory written in the **ini** format. Open the inventory file through VS Code Editor to view the contents of your inventory:
 ![VS Code Inventory](images/inventory.PNG)
 
-## Step 5
+## Step 6
 
 In the above output every `[ ]` defines a group. For example `[dc1]` is a group that contains the hosts `rtr1` and `rtr3`. Groups can also be _nested_. The group `[routers]` is a parent group to the group `[cisco]`
 
