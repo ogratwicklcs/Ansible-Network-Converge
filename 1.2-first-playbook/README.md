@@ -119,7 +119,7 @@ rtr1                       : ok=1    changed=0    unreachable=0    failed=0    s
 Now update the task to add one more SNMP RO community string named `ansible-test`.  
 
 ```
-snmp-server community ansible-test RO
+- snmp-server community ansible-test RO
 ```
 
 Use the text editor of your choice to open the `playbook.yml` file.
