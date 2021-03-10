@@ -1,6 +1,6 @@
 # Ansible Network Automation Workshop
 
-## Lab Connection Information: http://586b.rhdemo.io
+## Lab Connection Information: 
 
 This content is a multi-purpose toolkit for effectively demonstrating Ansible's capabilities on network equipment (Arista, Cisco, and Juniper) or providing informal workshop training in various forms -- instructor-led, hands-on or self-paced.
 
