@@ -1,6 +1,6 @@
 # Ansible Network Automation Workshop
 
-## Lab Connection Information: 
+## Lab Connection Information: http://f2d4.open.redhat.com
 
 This content is a multi-purpose toolkit for effectively demonstrating Ansible's capabilities on network equipment (Arista, Cisco, and Juniper) or providing informal workshop training in various forms -- instructor-led, hands-on or self-paced.
 
